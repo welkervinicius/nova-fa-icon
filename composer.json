@@ -1,0 +1,41 @@
+{
+    "name": "welkervinicius/nova-fa-icon",
+    "description": "An advanced field for Laravel Nova to select Font Awesome icons, with server-side search, pagination, and localization support.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "field",
+        "icon",
+        "fontawesome",
+        "picker"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "laravel/nova": "^5.0",
+        "laravel/nova-devtool": "^1.7"
+    },
+    "repositories": [
+        { "type": "composer", "url": "https://nova.laravel.com" }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Welkervinicius\\NovaFaIcon\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Welkervinicius\\NovaFaIcon\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
