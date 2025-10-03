@@ -35,7 +35,7 @@ public function boot()
 {
     parent::boot();
 
-    Nova::style('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css');
+    Nova::style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css');
 }
 ```
 
