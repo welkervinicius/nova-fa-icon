@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'icon_file' => __DIR__.'/../data/icons.json',
+    'icon_file' => base_path('vendor/welkervinicius/nova-fa-icon/data/icons.json'),
 
     /*
     |--------------------------------------------------------------------------
