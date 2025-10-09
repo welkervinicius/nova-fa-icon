@@ -4,12 +4,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Caminho para o arquivo JSON de ícones
+    | Path to the Icon JSON File
     |--------------------------------------------------------------------------
     |
-    | Por padrão, usamos o arquivo que vem com este pacote. Você pode
-    | publicar esta configuração e apontar para seu próprio arquivo
-    | JSON, caso utilize uma versão Pro do Font Awesome, por exemplo.
+    | By default, we use the icon file included with this package. You can
+    | publish this configuration and point to your own JSON file, for instance,
+    | if you are using a Pro version of Font Awesome.
+    |
+    | If you publish this configuration and encounter an error loading the JSON file,
+    | ensure the path is correct. For Pro versions, the icon data is typically located
+    | inside your `fontawesome` package under `metadata` path like:
+    | `asset('assets/fontawesome-pro/metadata/icons.json')`.
     |
     */
 
@@ -17,12 +22,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Estilos de Ícones a Serem Carregados
+    | Icon Styles to be Loaded
     |--------------------------------------------------------------------------
     |
-    | Defina quais estilos do Font Awesome devem ser carregados e exibidos
-    | no seletor de ícones. Por padrão, carregamos os estilos da
-    | versão gratuita do Font Awesome 6.
+    | Define which Font Awesome styles should be loaded and displayed in the
+    | icon picker. By default, we load the styles for the free version
+    | of Font Awesome 6.
     |
     */
 
