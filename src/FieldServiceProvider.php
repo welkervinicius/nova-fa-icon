@@ -24,11 +24,11 @@ class FieldServiceProvider extends ServiceProvider
         );
 
         // Carrega os arquivos de tradução do pacote
-        $this->loadTranslationsFrom(__DIR__.'/../lang', 'nova-fa-icon');
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'nova-fa-icon');
 
         // Torna os arquivos de tradução publicáveis
         $this->publishes([
-            __DIR__.'/../lang' => $this->app->langPath('vendor/nova-fa-icon'),
+            __DIR__.'/../resources/lang' => lang_path('vendor/nova-fa-icon'),
         ], 'nova-fa-icon-lang');
 
         // Registra o evento que é disparado quando o Nova está sendo servido

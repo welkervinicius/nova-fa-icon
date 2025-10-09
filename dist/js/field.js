@@ -262,8 +262,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         }, ["prevent"])),
         type: "button",
         "class": "px-3 h-9 flex-shrink-0 bg-gray-50 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 border-l border-gray-200 dark:border-gray-700 rounded-r-lg",
-        title: $props.field.translations.choose_an_icon
-      }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.field.translations.choose), 9 /* TEXT, PROPS */, _hoisted_5)]), _ctx.isModalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.field.translations.select_icon), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+        title: _ctx.__('Click to choose an icon')
+      }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.field.translations.choose), 9 /* TEXT, PROPS */, _hoisted_5)]), _ctx.isModalOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.field.translations.icon_list), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
         onClick: _cache[2] || (_cache[2] = function ($event) {
           return _ctx.isModalOpen = false;
         }),

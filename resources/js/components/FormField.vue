@@ -23,7 +23,7 @@
           @click.prevent="openModal"
           type="button"
           class="px-3 h-9 flex-shrink-0 bg-gray-50 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 border-l border-gray-200 dark:border-gray-700 rounded-r-lg"
-          :title="field.translations.choose_an_icon"
+          :title="__('Click to choose an icon')"
         >
           {{ field.translations.choose }}
         </button>
@@ -32,7 +32,7 @@
       <div v-if="isModalOpen" class="modal-container">
         <div class="modal-content bg-white dark:bg-gray-800">
           <div class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700">
-            <h2 class="text-xl font-bold text-gray-400 dark:text-gray-500">{{ field.translations.select_icon }}</h2>
+            <h2 class="text-xl font-bold text-gray-400 dark:text-gray-500">{{ field.translations.icon_list }}</h2>
             <button @click="isModalOpen = false" class="text-2xl text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200">&times;</button>
           </div>
 
@@ -117,7 +117,7 @@ export default {
           this.isLoading = false;
         })
         .catch(error => {
-          Nova.error('Falha ao carregar ícones do Font Awesome!');
+          Nova.error('Error fetching icons list. Please publish the assets and try again with your own fontawesome files.');
           this.isLoading = false;
         });
     },

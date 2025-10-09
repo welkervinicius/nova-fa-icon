@@ -90,6 +90,21 @@ Esse procedimento garante compatibilidade com qualquer distribuição do Font Aw
 
 ---
 
+### Localização
+
+A partir da versão **v1.1.0**, as traduções estão totalmente namespaced e carregadas pelo sistema de pacotes do Laravel.  
+Idiomas suportados:
+
+- Inglês `(en)`
+- Português (Brasil) `(pt_BR)`
+- Espanhol `(es)`
+- Italiano `(it)`
+- Russo `(ru)`
+
+O Laravel Nova seleciona automaticamente a tradução correta com base no idioma configurado no painel.
+
+---
+
 ### Uso
 
 #### Uso Básico

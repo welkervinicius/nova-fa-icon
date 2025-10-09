@@ -3,6 +3,7 @@
 namespace Welkervinicius\NovaFaIcon;
 
 use Laravel\Nova\Fields\Field;
+use Laravel\Nova\Nova;
 
 class NovaFaIcon extends Field
 {
@@ -27,11 +28,13 @@ class NovaFaIcon extends Field
         // Traduz as strings no backend e as envia para o frontend via 'meta'.
         $this->withMeta([
             'translations' => [
-                'choose' => __('nova-fa-icon::nova-fa-icon.choose'),
-                'choose_an_icon' => __('nova-fa-icon::nova-fa-icon.choose_an_icon'),
-                'select_icon' => __('nova-fa-icon::nova-fa-icon.select_icon'),
-                'search' => __('nova-fa-icon::nova-fa-icon.search'),
-                'loading' => __('nova-fa-icon::nova-fa-icon.loading'),
+                'choose' => Nova::__('nova-fa-icon::messages.nfai.choose'),
+                'choose_icon' => Nova::__('nova-fa-icon::messages.nfai.choose_icon'),
+                'icon_list' => Nova::__('nova-fa-icon::messages.nfai.icon_list'),
+                'search' => Nova::__('nova-fa-icon::messages.nfai.search'),
+                'loading' => Nova::__('nova-fa-icon::messages.nfai.loading'),
+                'no_results' => Nova::__('nova-fa-icon::messages.nfai.no_results'),
+                'clear_selection' => Nova::__('nova-fa-icon::messages.nfai.clear_selection'),
             ],
         ]);
     }

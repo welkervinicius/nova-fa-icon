@@ -90,6 +90,21 @@ This approach ensures full compatibility with any Font Awesome package (Free, Pr
 
 ---
 
+### Localization
+
+From v1.1.0, translations are fully namespaced and loaded via the Laravel package system.
+Supported languages:
+
+- English `(en)`
+- Portuguese (Brazil) `(pt_BR)`
+- Spanish `(es)`
+- Italian `(it)`
+- Russian `(ru)`
+
+Laravel Nova automatically selects the correct translation based on your panel locale.
+
+---
+
 ### Usage
 
 #### Basic Usage
